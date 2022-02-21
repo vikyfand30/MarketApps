@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/MarketApps/app/src/main/res/drawable/vector_back.xml" value="0.26614583333333336" />
         <entry key="..\:/MarketApps/app/src/main/res/drawable/vector_cart.xml" value="0.26614583333333336" />
+        <entry key="..\:/MarketApps/app/src/main/res/drawable/vector_close.xml" value="0.26614583333333336" />
+        <entry key="..\:/MarketApps/app/src/main/res/layout/activity_cart.xml" value="0.1793478260869565" />
         <entry key="..\:/MarketApps/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/MarketApps/app/src/main/res/layout/item_market.xml" value="0.1793478260869565" />
+        <entry key="..\:/MarketApps/app/src/main/res/layout/layout_cart_item.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

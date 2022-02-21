@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CartActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/toolbar"
@@ -20,47 +20,22 @@
             android:background="@color/white">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/iv_back"
+                android:id="@+id/iv_back_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:src="@drawable/vector_back"
-                android:tint="@color/black" />
+                android:tint="@color/black"
+                android:src="@drawable/vector_back" />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Menu"
+                android:text="Cart"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/iv_cart"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/vector_cart"
-                    android:tint="@color/black" />
-
-                <com.nex3z.notificationbadge.NotificationBadge
-                    android:id="@+id/iv_badge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/iv_cart"
-                    android:layout_marginStart="10dp"
-                    android:layout_toRightOf="@id/iv_cart"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    app:nbMaxTextLength="2" />
-
-            </RelativeLayout>
 
 
         </com.google.android.material.appbar.MaterialToolbar>
@@ -70,11 +45,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_drink"
+        android:id="@+id/rv_cart"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
